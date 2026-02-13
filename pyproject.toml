@@ -1,0 +1,36 @@
+[project]
+name = "android-script-tool"
+version = "3.0.0"
+description = "安卓脚本切图神器 - Android Game Script Crop Tool"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "PyQt5==5.15.10",
+    "PyQt5-Qt5==5.15.2",
+    "Pillow>=9.0.0",
+    "opencv-python>=4.5.0",
+    "numpy>=1.21.0",
+]
+
+[project.optional-dependencies]
+sam = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "segment-anything @ git+https://github.com/facebookresearch/segment-anything.git",
+]
+
+[project.scripts]
+android-script-tool = "main:main"
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+default = true
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[tool.uv.pip]
+extra-index-url = ["https://download.pytorch.org/whl/cu121"]

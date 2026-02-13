@@ -1,0 +1,53 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Test files and outputs
+test_*.py
+*_test.py
+test_output/
+test_output.txt
+res_output/
+
+# Temporary files
+nul
+*.tmp
+*.log
+
+# Local configuration
+.python-version
+uv.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports (generated)
+CODE_REVIEW_REPORT.md
+TEST_REPORT.md
+TEST_CHECKLIST.md
+
+# Large model files
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+models/*.pth
+models/*.pt
+
+# Version backup files
+*_v2.py
+*~.py

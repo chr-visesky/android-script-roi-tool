@@ -1,0 +1,12 @@
+# 安卓脚本切图工具 - 依赖列表
+
+# GUI框架
+PyQt5>=5.15.0
+
+# 图像处理
+Pillow>=9.0.0
+opencv-python>=4.5.0
+numpy>=1.21.0
+
+# 可选：ADB通信
+# adbutils>=0.11.0
